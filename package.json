@@ -1,0 +1,37 @@
+{
+  "name": "yt-animation-generator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/remotion/index.ts",
+    "render": "remotion render src/remotion/index.ts Shorts1080x1920 out/short.mp4",
+    "render:roblox": "remotion render src/remotion/index.ts RobloxStoryShort out/roblox-story-short.mp4",
+    "render:sample": "remotion render src/remotion/index.ts Shorts1080x1920 out/sample-short.mp4 --props=\"{\\\"templateId\\\":\\\"story-30\\\"}\"",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx",
+    "dashboard": "vite",
+    "dashboard:build": "vite build"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.342",
+    "@remotion/google-fonts": "^4.0.342",
+    "@remotion/media-utils": "^4.0.342",
+    "@remotion/player": "^4.0.342",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.342",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.8",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.8",
+    "@types/node": "^22.15.21"
+  }
+}
